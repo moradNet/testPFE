@@ -1,10 +1,423 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+        .side-footer:hover {
+    cursor: pointer;
+    transform: scale(0.9);
 }
 
-h1 {
-    font-size: 2rem;
-    color: blue;
+.side-footer:hover > i , .side-footer:hover > h2 {
+    color: #10ac84;
+}
+
+.main-container {
+    width: 76%;
+    height: 92vh;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #8395a7;
+}
+
+.nav-bar {
+    /* border: 2px solid #000; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-radius: 10px;
+}
+
+.nav-bar .last-oupdate {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.nav-bar h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #10ac84;
+    text-transform: capitalize;
+}
+
+.nav-bar h2:hover{
+    cursor: pointer;
+}
+
+.last-oupdate h4 , .last-oupdate h3 {
+    font-size: 1rem;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.data-donnes-container {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid #000; */
+    /* padding: 15px; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.data-carte {
+    width: 30%;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    box-shadow: 3px 3px 2px #8395a7;
+    /* border: 1px solid #000; */
+    transition: ease 0.3s;
+}
+
+.data-carte-container {
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.data-carte-container h1 {
+    color: #000;
+    font-size: 3.1rem;
+    font-weight: 600;
+}
+
+.data-carte-container h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.data-carte-container h4 {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.data-carte i {
+    width: 50%;
+    font-size: 6.2rem;
+    color: #10ac84;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-carte:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.second-container {
+    width: 100%;
+    height: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.ouverture {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    width: 35%;
+    box-shadow: 3px 3px 2px #8395a7;
+    border-radius: 10px;
+}
+
+.ouverture .ferme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.ouverture .ferme h3 , .ouverture .ferme h2 {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.ouverture .btn-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.ouverture .btn-containers button {
+    background: none;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+}
+
+.ouverture .btn-containers button:hover , .moteur-de-refroidemement .second-carte-moteur button:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    background-color: #10ac84;
+    color: #fff;
+    border-color: #10ac84;
+}
+
+.moteur-de-refroidemement {
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 2px #8395a7;
+    border-radius: 10px;
+    row-gap: 20px;
+}
+
+.moteur-de-refroidemement .moteur-carte {
+    display: flex;
+    flex-direction: row;
+    column-gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.moteur-de-refroidemement .second-carte-moteur {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.moteur-de-refroidemement .second-carte-moteur button {
+    background: none;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+    
+}  
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    column-gap: 4rem;
+}
+
+.sid-bar {
+    width: 17%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    row-gap: 1.5rem;
+    background-color: white;
+    box-shadow: 3px 3px 15px #8395a7;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.logo h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #10ac84;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.logo h2:hover {
+    cursor: pointer;
+}
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    column-gap: 0.9rem;
+    height: max-content;
+    /* border: 2px solid blue; */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.profil i {
+    /* width: 40%; */
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 9px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.profil i:hover {
+    color: #10ac84;
+    border-color: #10ac84;
+    cursor: pointer;
+}
+
+.profil .protail-second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 6px;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    width: 70%;
+    padding: 8px;
+    transition: ease 0.3s;
+}
+
+.profil .protail-second h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+}
+
+.profil .protail-second:hover {
+    cursor: pointer;
+    color: #10ac84;
+    transform: scale(0.9);
+    border-color: #10ac84;
+}
+
+.profil .protail-second:hover > h3 {
+    color: #10ac84;
+}
+
+.conatiner-links ul li {
+    list-style: none;
+}
+
+.conatiner-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.conatiner-links ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0.5rem;
+    /* justify-content: center;
+    align-items: center; */
+    width: 97%;
+}
+
+.conatiner-links ul li {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    transition: ease 0.3s;
+}
+
+.conatiner-links ul li:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.conatiner-links ul li:hover > a , 
+.conatiner-links ul li:hover > i {
+    color: #10ac84;
+}
+
+.conatiner-links ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    /* text-align: center; */
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.conatiner-links ul li i {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.side-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 9rem;
+    width: 100%;
+    padding: 15px;
+    column-gap: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding-left: 25px;
+}
+
+.side-footer h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ee5253;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.side-footer i {
+    font-size: 1.1rem;
+    color: #ee5253;
 }
